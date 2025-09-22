@@ -1,0 +1,52 @@
+/* Stili per il configuratore del piano di comunicazione */
+
+/* Animazione glow-pulse */
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 5px 0 rgba(255, 0, 146, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px 0 rgba(255, 0, 146, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 5px 0 rgba(255, 0, 146, 0.3);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2s infinite;
+}
+
+/* Stili per valori numerici tabulari */
+.numeric-value {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Stili personalizzati per slider */
+.slider-custom [data-orientation="horizontal"] {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
+
+.slider-custom [data-orientation="horizontal"] .relative {
+  background-color: #ff0092;
+}
+
+.slider-custom [role="slider"] {
+  background-color: #ff0092;
+  border: 2px solid white;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.slider-custom [role="slider"]:hover {
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.slider-custom [role="slider"]:focus {
+  box-shadow: 0 0 0 2px rgba(255, 0, 146, 0.4);
+}
